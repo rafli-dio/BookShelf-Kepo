@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookShelf Apps</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Buku Kepo</h1>
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <div class="title">
+                <h2>Masukkan Buku</h2>
+            </div>
+            <form action="#" class="form" id="form-book">
+                <div class="form-group">
+                    <label for="bookTitle">Judul Buku</label>
+                    <input type="text" id="bookTitle" name="bookTitle" required>
+                </div>
+                <div class="form-group">
+                    <label for="author">Penulis</label>
+                    <input type="text" id="author" name="author" required>
+                </div>
+                <div class="form-group">
+                    <label for="year">Tahun</label>
+                    <input type="number" id="year" name="year" required>
+                </div>
+    
+                <div class="check">
+                    <label for="end-read">Selesai Dibaca</label>
+                    <input type="checkbox" id="end-read" name="end-read">
+                </div>
+                <input type="submit" id="submit" class="button-submit" value="Simpan Buku">
+            </form>
+        </div>
+
+        <div id="search" class="card">
+            <div class="title">
+                <h2>Cari Buku</h2>
+            </div>
+            <form action="#" class="form" id="form-search">
+                <input type="text" id="searchBook" name="searchBook" placeholder="Judul / Penulis / Tahun">
+                <input type="submit" id="submit" class="button-search" value="Cari">
+            </form>
+        </div>
+        <div id="uncompletedRead" class="book-list">
+            <div class="title">
+                <h2>Buku Yang Belum Selesai Dibaca</h2>
+            </div>
+            <div id="bodyUncompletedRead"></div>
+        </div>
+        <div id="completedRead" class="book-list">
+            <div class="title">
+                <h2>Buku Yang Selesai Dibaca</h2>
+            </div>
+            <div id="bodyCompletedRead"></div>
+        </div>
+    </div>
+
+    <script src="js/data.js"></script>
+    <script src="js/dom.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/search.js"></script>
+</body>
+</html>
